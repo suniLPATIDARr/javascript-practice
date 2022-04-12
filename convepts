@@ -1,5 +1,22 @@
 variable create rules.
 precedence of the operator in javascript
+
+proirity 
 string methods
 array methods
 object methods
+call apply bind
+server-side-rendering
+testing
+
+webpack
+forwardRef()
+useRef()
+useCallback()
+useContext()
+generator
+iterators 
+performence
+routers
+useMemo: Returns and stores the calculated value of a function in a variable
+useCallBack: Returns and stores the actual function itself in a variable
