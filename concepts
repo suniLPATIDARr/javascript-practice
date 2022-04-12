@@ -10,7 +10,10 @@ server-side-rendering
 one way binding , two way binding
 performence
 routers
+responsive
+cross browser support
 testing
+strictMode
 webpack
 
 forwardRef()
@@ -20,5 +23,45 @@ useContext()
 generator
 iterators 
 
-useMemo: Returns and stores the calculated value of a function in a variable
-useCallBack: Returns and stores the actual function itself in a variable
+useMemo
+    Returns and stores the calculated value of a function in a variable
+
+useCallBack
+    Returns and stores the actual function itself in a variable
+
+DATA BINDING
+    Data Binding is the process of connecting the view element or user interface,
+    with the data which populates it.
+
+    In ReactJS, components are rendered to the user interface and the component’s 
+    logic contains the data to be displayed in the view(UI).
+    The connection between the data to be displayed in the view and the component’s
+    logic is called data binding in ReactJS.
+
+STRICT MODE IN REACT 
+    <React.StrictMode>
+    Identifying components with unsafe lifecycles
+    Warning about legacy string ref API usage
+    Warning about deprecated findDOMNode usage
+    Detecting unexpected side effects
+    Detecting legacy context API
+    Detecting unsafe effects
+    </React.StrictMode>
+
+PERFORMANCE
+    Performance optimization tool - santry - (check how much trafic,time of request, individual alerts )
+
+    Profiler - tool available for react development tools extension that you can add to your browser
+    in this tool we have a various graphs, we can check which component is taking much time to render and need to pay attention
+    and how many time perticular component is rendered.
+    
+    PureComponent
+    useMemo
+    use local veriable 
+    avoide console logs avaoide commentted code 
+    if we are using list anywhere must give unique key to each element.
+    check the console if it is giving any warning try to resolve that.
+    implement scroll and filter api's if list is longer.
+    react.lazy();
+    cherry picking() method , import only those f or v or mod that is required instead of importing complete module.
+    web pack bundle analyser plug in ( check which module is havier or larger)
