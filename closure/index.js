@@ -1,5 +1,6 @@
 // closure is created when a child function keep the environment
 //  of the parent scope even after the parent function has already executed 
+// its basically a inner function with preserved value which is returned by outer function
 function outer() {
     let counter = 0;
     function inner(a) {
