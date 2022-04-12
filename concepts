@@ -10,11 +10,14 @@ server-side-rendering
 one way binding , two way binding
 performence
 routers
+strictMode
+webpack
+
+props.children
 responsive
 cross browser support
 testing
-strictMode
-webpack
+
 
 forwardRef()
 useRef()
@@ -54,7 +57,7 @@ PERFORMANCE
     Profiler - tool available for react development tools extension that you can add to your browser
     in this tool we have a various graphs, we can check which component is taking much time to render and need to pay attention
     and how many time perticular component is rendered.
-    
+
     PureComponent
     useMemo
     use local veriable 
