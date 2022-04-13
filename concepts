@@ -13,6 +13,9 @@ routers
 strictMode
 webpack
 
+types of error js
+operators
+
 props.children
 responsive
 cross browser support
@@ -68,3 +71,21 @@ PERFORMANCE
     react.lazy();
     cherry picking() method , import only those f or v or mod that is required instead of importing complete module.
     web pack bundle analyser plug in ( check which module is havier or larger)
+
+1. RangeError
+    This is thrown when a number is outside an allowable range of values.
+
+2. ReferenceError
+This error is thrown when a reference made to a variable/item is broken. That is the variable/item doesn’t exist.
+
+3. SyntaxError
+This is the most common error we encounter. This error occurs when we type code that the JS engine can understand.
+
+4. TypeError
+TypeError is used to indicate an unsuccessful operation when none of the other NativeError objects are an appropriate indication of the failure cause.
+
+5. URIError
+This indicates that one of the global URI handling functions was used in a way that is incompatible with its definition.
+
+6. InternalError
+This error occurs internally in the JS engine, especially when it has too much data to handle and the stack grows way over its critical limit.
