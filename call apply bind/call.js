@@ -4,8 +4,8 @@ function student(fname, lname, sub) {
     this.sub = sub;
 }
 
-const greet = function (prefix) {
-    console.log(prefix, '', this.fname, ' ', this.lname)
+const greet = function (prefix, suffix) {
+    console.log(prefix, '', this.fname, ' ', this.lname, suffix)
 }
 let st1 = new student('vipin', 'pal', 'boxing');
 let st2 = new student('priya', 'agarwal', 'BA');
@@ -21,6 +21,6 @@ let em1 = new employe('sudhanta', 'singh', 'design');
 greet.apply(em1, ['Sir']);
 
 const fn = greet.bind(st2)
-fn('Mr.')
+fn('Mr.', 'How Are You?')
 
 
