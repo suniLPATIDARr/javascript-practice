@@ -4,7 +4,7 @@ const unique = []
 
 // for(let i=0)
 function onlyUnique(value, index, self) {
-    return self.indexOf(value) === index;
+    return !self.indexOf(value) === index;
 }
 
 // usage example:
@@ -31,3 +31,23 @@ for (var i = 1; i < Arr.length; i++)
 // console.log(Arr);
 // console.log(unique);
 
+function groupOfArr(arr, group) {
+    const holdingArr = []
+    let currentArr = []
+    for (let i = 0; i < arr.length; i++) {
+        // console.log(currentArr.length)
+        if (currentArr.length === 0 || currentArr.length <= group) {
+            currentArr.push(arr[i]);
+        }
+        if (currentArr.length === group) {
+            holdingArr.push(currentArr);
+            currentArr = [];
+        }
+        if (i === (arr.length - 1)) {
+            currentArr.length > 0 && holdingArr.push(currentArr);
+        }
+    }
+    console.log(holdingArr)
+};
+
+groupOfArr([11, 3, 4, 6, 7, 8, 9, 0], 4)

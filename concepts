@@ -1,7 +1,7 @@
 variable create rules.
 precedence of the operator in javascript
 
-proirity 
+proirity
 string methods
 array methods
 object methods
@@ -26,41 +26,40 @@ testing
 TypeScript
 Data structures with JS
 
-
 forwardRef()
 useRef()
 useCallback()
 useContext()
 generator
-iterators 
+iterators
 
 useMemo
-    Returns and stores the calculated value of a function in a variable
+Returns and stores the calculated value of a function in a variable
 
 useCallBack
-    Returns and stores the actual function itself in a variable
+Returns and stores the actual function itself in a variable
 
 DATA BINDING
-    Data Binding is the process of connecting the view element or user interface,
-    with the data which populates it.
+Data Binding is the process of connecting the view element or user interface,
+with the data which populates it.
 
-    In ReactJS, components are rendered to the user interface and the component’s 
+    In ReactJS, components are rendered to the user interface and the component’s
     logic contains the data to be displayed in the view(UI).
     The connection between the data to be displayed in the view and the component’s
     logic is called data binding in ReactJS.
 
-STRICT MODE IN REACT 
-    <React.StrictMode>
-    Identifying components with unsafe lifecycles
-    Warning about legacy string ref API usage
-    Warning about deprecated findDOMNode usage
-    Detecting unexpected side effects
-    Detecting legacy context API
-    Detecting unsafe effects
-    </React.StrictMode>
+STRICT MODE IN REACT
+<React.StrictMode>
+Identifying components with unsafe lifecycles
+Warning about legacy string ref API usage
+Warning about deprecated findDOMNode usage
+Detecting unexpected side effects
+Detecting legacy context API
+Detecting unsafe effects
+</React.StrictMode>
 
 PERFORMANCE
-    Performance optimization tool - santry - (check how much trafic,time of request, individual alerts )
+Performance optimization tool - santry - (check how much trafic,time of request, individual alerts )
 
     Profiler - tool available for react development tools extension that you can add to your browser
     in this tool we have a various graphs, we can check which component is taking much time to render and need to pay attention
@@ -68,8 +67,8 @@ PERFORMANCE
 
     PureComponent
     useMemo
-    use local veriable 
-    avoide console logs avaoide commentted code 
+    use local veriable
+    avoide console logs avaoide commentted code
     if we are using list anywhere must give unique key to each element.
     check the console if it is giving any warning try to resolve that.
     implement scroll and filter api's if list is longer.
@@ -78,19 +77,30 @@ PERFORMANCE
     web pack bundle analyser plug in ( check which module is havier or larger)
 
 1. RangeError
-    This is thrown when a number is outside an allowable range of values.
+   This is thrown when a number is outside an allowable range of values.
 
 2. ReferenceError
-This error is thrown when a reference made to a variable/item is broken. That is the variable/item doesn’t exist.
+   This error is thrown when a reference made to a variable/item is broken. That is the variable/item doesn’t exist.
 
 3. SyntaxError
-This is the most common error we encounter. This error occurs when we type code that the JS engine can understand.
+   This is the most common error we encounter. This error occurs when we type code that the JS engine cant understand.
 
 4. TypeError
-TypeError is used to indicate an unsuccessful operation when none of the other NativeError objects are an appropriate indication of the failure cause.
+   TypeError is used to indicate an unsuccessful operation when none of the other NativeError objects are an appropriate indication of the failure cause.
 
 5. URIError
-This indicates that one of the global URI handling functions was used in a way that is incompatible with its definition.
+   This indicates that one of the global URI handling functions was used in a way that is incompatible with its definition.
 
 6. InternalError
-This error occurs internally in the JS engine, especially when it has too much data to handle and the stack grows way over its critical limit.
+   This error occurs internally in the JS engine, especially when it has too much data to handle and the stack grows way over its critical limit.
+
+Tree Shaking - removal or elimination of dead code , very ofthen we have modules exporting a bunch of things but for page or app we may only be importing subset of those items being exported. this is where tree shaking concept comes in where a browser only loads the stuff which is being used and rest is disgarded
+
+use ES6 module syntax import and export
+need to disable babble
+
+sideEffect['asf]
+webpack use terser to parse module dependancy graph
+
+Lazy - basically its a design pattern for optomizing application performance.
+concept of lazy loading is pretty simple initialize the component that are critical to UI first and quitely render non-criticalmitems later
