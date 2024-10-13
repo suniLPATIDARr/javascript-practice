@@ -3,7 +3,7 @@ let b = 'A'
 if (a < b) { // true
     console.log(a + ' is less than ' + b)
 } else if (a > b) {
-    console.log(a + ' is greater than ' + b)
+    console.log(a.charCodeAt(0) + ' is greater than ' + b.charCodeAt(0))
 } else {
     console.log(a + ' and ' + b + ' are equal.')
 }

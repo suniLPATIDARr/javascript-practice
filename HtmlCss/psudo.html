@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    article p:first-child::first-line {
+      font-size: 120%;
+      font-weight: bold;
+    }
+  </style>
+  <body>
+    <div>
+      <h1>Combinators</h1>
+      <div><b>descendant combinator</b> : body article p</div>
+      <div><b>child combinator</b> : article > p</div>
+      <div><b>next-sibling combinator</b> : p + img</div>
+      <div><b>subsequent-sibling combinator</b> : p ~ img</div>
+      <div>
+        <b>nesting selector </b> : &
+        <pre>
+            parentRule {
+                /* parent rule style properties */
+                & childRule {
+                  /* child rule style properties */
+                }
+              }
+        </pre>
+      </div>
+      <div>
+        <h2>Relative lenght units</h2>
+        <div>
+          Relative length units are relative to something else. For example: em
+          is relative to the font size of this element, or the font size of the
+          parent element when used for font-size. rem is relative to the font
+          size of the root element. vh and vw are relative to the viewport's
+          height and width, respectively.
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,13 +1,15 @@
-function groupOfArr(arr,input) {
-    const subSet=[];
-    for (let i = 0; i < arr.length; i++) {
-        for(let j=i+1;j<arr.length;j++){
-            if((arr[i]+arr[j])===input){
-                subSet.push([arr[i],arr[j]])
-            }
-        }
+function myfunc(arr){
+    let mock=[...arr];
+    let mul=0;
+  for(let i=0;i<mock.length;i++){
+    for(let j=i+1;j<mock.length;j++){
+     if(i!==j){
+mul+=arr[j]
+     }
     }
-    console.log(subSet);
-};
-
-groupOfArr([1,2,5,8,3,7,6] ,7)
+    mock[i]=mul;
+    mul=0;
+  }
+  console.log(mock)
+    }
+myfunc([2,4,5,6,7])

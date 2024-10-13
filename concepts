@@ -104,3 +104,9 @@ webpack use terser to parse module dependancy graph
 
 Lazy - basically its a design pattern for optomizing application performance.
 concept of lazy loading is pretty simple initialize the component that are critical to UI first and quitely render non-criticalmitems later
+
+cont ele =(props)=> React.createElement('div',{className:'myStyle'},`My name is ${props.name}`)
+React.cloneElement() is useful when you want to add or modify the props of a parent component’s children while avoiding unnecessary duplicate code.
+React.cloneElement(element, [props], [...children]);
+
+Z-index -1=> leads the element below body.

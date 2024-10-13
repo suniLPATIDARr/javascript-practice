@@ -40,6 +40,25 @@
 
 // groupOfArr([1,1,1,1,2,2,2,2,2,2,3,3])
 
+function reverseSentance(input){
+    const arr=input.split(' ');
+    const reverse=[];
+    arr.map((item,index)=>{
+        if(item.length>0){
+            const strSplit=item.split('');
+            let x=''
+            for(let i=strSplit.length-1;i>=0;i--){
+            x+=strSplit[i]
+            }
+        reverse.push(x);
+        }else{
+        reverse.push(item)
+        }
+    })
+     console.log(reverse.toString().replaceAll(',',' '))
+    }
+    reverseSentance('i am working on react')
+
 function groupOfArr(obj) {
     console.log(obj)
     const mainKeys = Object.keys(obj);
