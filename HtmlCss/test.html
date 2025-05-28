@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .item ~ div.item1 {
+      /* Subsequent-sibling combinator */
+      color: blue;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="item">item 1</div>
+      <div class="item">item 1</div>
+      <div class="item1">item 11</div>
+      <div class="item">item 1</div>
+      <div class="item">item 1</div>
+    </div>
+    <div class="parallel">parallel</div>
+  </body>
+</html>

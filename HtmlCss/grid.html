@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .main {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+      gap: 10px;
+      grid-auto-rows: 150px;
+      /* grid-auto-rows: 150px; avoide giving height to grid children */
+    }
+    .box {
+      background-color: blueviolet;
+    }
+  </style>
+  <body>
+    <div>
+      <h4>Grid auto-fill vs auto-fit</h4>
+      <ul>
+        <li>auto-fit - grow large</li>
+        <li>
+          auto-fill - maintain the size and dont let elements become too large
+        </li>
+      </ul>
+    </div>
+    <div class="main">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </body>
+</html>

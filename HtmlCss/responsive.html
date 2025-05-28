@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h4>Media query</h4>
+      <ul>
+        <li>width/ @media(100px <= width<=300px)</li>
+        <li>Orientation (portrait/landscape)</li>
+        <li>min/max-aspect ratio (1/1)</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Container query</h4>
+      <ul>
+        <li>.main, .sidebar{container-type:inline}</li>
+        <li>@container(width<=300px){.box{bgcolor:red}}</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Custom media query</h4>
+      <ul>
+        <li>@custom-media --small(widht<=300px)</li>
+        <li>@media --small{ color:green }</li>
+      </ul>
+    </div>
+  </body>
+</html>
